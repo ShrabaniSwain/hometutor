@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeTutor"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".GuardianRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.HomeTutor" />
+        <activity
+            android:name=".TeacherPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAllActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".GuardianPrivacyActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".GuardianTermsActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherPrivacyPolicy"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherTermsCondition"
+            android:exported="false"
+            android:label="@string/title_activity_teacher_terms_condition"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherNotificationActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherSupportActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".FullScreenImageActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".GuardianProfileActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".BankDetailsActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".KycActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".ServicesActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".AddressActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".QualificationActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".RegisterNowActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".EditProflieActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".AddTaskActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherTaskDetailsActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".CompleteProfileActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TeacherMainActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".TaskdeatilsActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SupportActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SelectquestionThree"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SelectQuestionTwo"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SelectQuestionOne"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SelectBoardOption"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".SelectTeacher"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".GuardianMainActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".GuardianNotification"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".GuardianPackageActivity"
+            android:exported="false"
+            android:theme="@style/GuardianTheme" />
+        <activity
+            android:name=".LogInHomeTutor"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".HomeTutorOtpActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".LoginMobileNoHome"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".LoginSignUpActivity"
+            android:exported="false"
+            android:theme="@style/HomeTutorTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/HomeTutorTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

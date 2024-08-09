@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MyProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/guardian_background_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        app:srcCompat="@drawable/profileimage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:srcCompat="@drawable/camera" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Sudip Das"
+        android:textColor="#00448D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sudip@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <ImageView
+        android:id="@+id/ivProfileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/editprofile" />
+
+    <TextView
+        android:id="@+id/tvGeaduate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graduate"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintStart_toStartOf="@id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvYearOfExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Y.O.E"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintStart_toEndOf="@id/tvGeaduate"
+        app:layout_constraintEnd_toStartOf="@id/tvYearOfExpDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvYearOfExpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="March 6 1992"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:padding="6dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 Years"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintStart_toStartOf="@id/tvGeaduate"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeaduate" />
+
+    <TextView
+        android:id="@+id/tvMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="#2A4767"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintStart_toEndOf="@id/tvGeaduate"
+        app:layout_constraintEnd_toStartOf="@id/tvYearOfExpDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvYearOfExpDate" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aboutCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_color">
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAboutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam onumy eirmod tempor invidunt ut voluptua At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
+            android:textColor="#98A1AB"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAbout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/aboutCardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_color">
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAddressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23/1 Mohajyoti, Block 5, Beside Sargam Studio, Birati, Kolkata, 700051"
+            android:textColor="#2A4767"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/servicesCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_color">
+
+        <TextView
+            android:id="@+id/tvServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvServicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvServices" />
+
+        <TextView
+            android:id="@+id/tvService1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service 1"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintLeft_toRightOf="@id/tvServicesTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvServices" />
+
+        <TextView
+            android:id="@+id/tvService2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service 2"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintEnd_toStartOf="@id/tvService3"
+            app:layout_constraintStart_toEndOf="@id/tvService1"
+            app:layout_constraintTop_toBottomOf="@+id/tvServices" />
+
+        <TextView
+            android:id="@+id/tvService3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service 3"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvServices" />
+
+        <TextView
+            android:id="@+id/tvUnit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 1: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvServicesTitle" />
+
+        <TextView
+            android:id="@+id/tvUnitsName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units Name"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintLeft_toRightOf="@id/tvUnit1"
+            app:layout_constraintTop_toBottomOf="@+id/tvService1" />
+
+        <TextView
+            android:id="@+id/tvUnitsName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units Name"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintEnd_toStartOf="@id/tvUnitsName3"
+            app:layout_constraintStart_toEndOf="@id/tvUnitsName1"
+            app:layout_constraintTop_toBottomOf="@+id/tvService2" />
+
+        <TextView
+            android:id="@+id/tvUnitsName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units Name"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvService3" />
+
+        <TextView
+            android:id="@+id/tvCaptureArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Area:"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUnit1" />
+
+        <TextView
+            android:id="@+id/tvCaptureAreaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="6dp"
+            android:background="@drawable/border_color"
+            app:layout_constraintLeft_toRightOf="@id/tvCaptureArea"
+            app:layout_constraintTop_toBottomOf="@id/tvUnitsName1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardKyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/servicesCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:background="@drawable/border_color">
+
+        <TextView
+            android:id="@+id/tvKyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KYC"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvVoterId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votar Id Number: "
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKyc" />
+
+        <TextView
+            android:id="@+id/tvVoterIdNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WB 25 E 12345"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tvVoterId"
+            app:layout_constraintTop_toBottomOf="@id/tvKyc" />
+
+        <TextView
+            android:id="@+id/tvAadharId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aadhar Id Number: "
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVoterId" />
+
+        <TextView
+            android:id="@+id/tvAadharIdNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234 1245 4568"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tvAadharId"
+            app:layout_constraintTop_toBottomOf="@id/tvVoterId"/>
+
+        <TextView
+            android:id="@+id/tvPanNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan Number: "
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAadharId" />
+
+        <TextView
+            android:id="@+id/tvPanNumberNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AOPT 124 D 24"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tvPanNumber"
+            app:layout_constraintTop_toBottomOf="@id/tvAadharId"/>
+
+        <TextView
+            android:id="@+id/tvDrivingLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving License: "
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPanNumber" />
+
+        <TextView
+            android:id="@+id/tvDrivingLicenseNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WB 25 E 12345"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tvDrivingLicense"
+            app:layout_constraintTop_toBottomOf="@id/tvPanNumber"/>
+
+        <TextView
+            android:id="@+id/btnSuccessful"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDrivingLicense"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="13dp"
+            android:text="Upload Your Bank Passbook"
+            android:drawableStart="@drawable/bankwhite"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="50dp"
+            android:textSize="16sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardKyc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_color">
+
+        <TextView
+            android:id="@+id/tvBankDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICICI Bank"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/bank"
+            android:drawablePadding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankDetails" />
+
+        <TextView
+            android:id="@+id/tvBankholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankName" />
+
+        <TextView
+            android:id="@+id/tvBankholderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudip Das"
+            android:textStyle="bold"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvBankholder"
+            app:layout_constraintTop_toBottomOf="@id/tvBankName" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Name: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankholder" />
+
+        <TextView
+            android:id="@+id/tvAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudip Das"
+            android:textStyle="bold"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvAccount"
+            app:layout_constraintTop_toBottomOf="@id/tvBankholder" />
+
+        <TextView
+            android:id="@+id/tvAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAccount" />
+
+        <TextView
+            android:id="@+id/tvBankAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567891234568"
+            android:textStyle="bold"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvAccountNumber"
+            app:layout_constraintTop_toBottomOf="@id/tvAccount" />
+
+        <TextView
+            android:id="@+id/tvIFSC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAccountNumber" />
+
+        <TextView
+            android:id="@+id/tvIFSCCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICICI006"
+            android:textStyle="bold"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvIFSC"
+            app:layout_constraintTop_toBottomOf="@id/tvAccountNumber" />
+
+        <TextView
+            android:id="@+id/tvBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Name: "
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIFSC" />
+
+        <TextView
+            android:id="@+id/tvBranchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bidhannagar Branch"
+            android:textStyle="bold"
+            android:textColor="#2A4767"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvBranch"
+            app:layout_constraintTop_toBottomOf="@id/tvIFSC" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

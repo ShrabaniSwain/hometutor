@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            app:actionLayout="@layout/menu_item_with_line"
+            android:icon="@drawable/profile" />
+    </group>
+
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_enquiry"
+        android:title="Enquiry"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/enquiry"/>
+    </group>
+
+    <group android:id="@+id/group3"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_my_request"
+        android:title="My Request"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/request"/>
+    </group>
+
+    <group android:id="@+id/group4"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_support"
+        android:title="Support"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/support"/>
+    </group>
+
+    <group android:id="@+id/group5"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_review"
+        android:title="Review"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/review"/>
+    </group>
+
+    <group android:id="@+id/group6"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_terms"
+        android:title="Terms"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/term"/>
+    </group>
+
+    <group android:id="@+id/group7"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="Privacy"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/privacy"/>
+    </group>
+
+    <group android:id="@+id/group8"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_log_out"
+        android:title="Log Out"
+        app:actionLayout="@layout/menu_item_with_line"
+        android:icon="@drawable/logout"/>
+    </group>
+
+    <group android:id="@+id/group9"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav"
+            android:enabled="false"
+            android:title="" />
+
+    </group>
+
+</menu>

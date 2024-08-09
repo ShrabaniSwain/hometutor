@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".LoginMobileNoHome">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="10dp"
+        android:background="#DCFFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivHomeTutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/hometutorslogocopy"/>
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="Your mobile number"
+                    android:textColorHint="#A1A1A1"
+                    android:padding="14dp"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/ivHomeTutor"
+                    android:background="@drawable/edit_text_background_box"/>
+
+            <TextView
+                android:id="@+id/btnGetOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Get OTP"
+                android:padding="14dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="15dp"
+                app:layout_constraintTop_toBottomOf="@id/etMobileNumber"
+                android:backgroundTint="@color/background_color"
+                android:background="@drawable/edit_text_background_box"/>
+
+            <View
+                android:id="@+id/leftShadow"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/btnGetOtp"
+                app:layout_constraintRight_toLeftOf="@id/centeredText"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="43dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shadow_line" />
+
+            <View
+                android:id="@+id/rightShadow"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                app:layout_constraintTop_toBottomOf="@id/btnGetOtp"
+                app:layout_constraintLeft_toRightOf="@id/centeredText"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shadow_line" />
+
+            <TextView
+                android:id="@+id/centeredText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/btnGetOtp"
+                android:text="Or"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvUserIdPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/centeredText"
+                android:text="Login via user id &amp; password"
+                android:textStyle="bold"
+                android:textColor="@color/background_color"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tvUserIdPass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="55dp">
+
+                <TextView
+                    android:id="@+id/tvDontHaveAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textColor="#6D6D6D"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRegisterNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"
+                    android:textStyle="bold"
+                    android:layout_marginStart="6dp"
+                    android:textColor="@color/background_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="@color/white"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivHomeTutorCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:src="@drawable/home"
+            app:tint="@color/background_color" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
