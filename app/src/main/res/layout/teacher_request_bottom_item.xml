@@ -28,7 +28,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:textColor="#2A4767"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvServiceName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_marginStart="10dp"
             android:textSize="14sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,18 +65,17 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDetailsName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvServiceName"
             app:layout_constraintLeft_toRightOf="@id/tvDetails"
-            android:text="Cat 1, Cat 2, Cat 3"
             android:textStyle="bold"
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnCall"
             android:layout_width="82dp"
             android:layout_height="36dp"
@@ -86,7 +85,7 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/freedemo"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/paid"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
@@ -105,7 +104,7 @@
             android:drawablePadding="5dp"
             android:textSize="10sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRpee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,7 +116,7 @@
             android:textColor="#6EB53B"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +155,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPostedBy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -170,7 +169,7 @@
             android:textColor="#2A4767"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPostedByName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,7 +182,7 @@
             android:textColor="#00448D"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,25 +196,29 @@
             android:textColor="#2A4767"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAddressName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/tvAddress"
+            app:layout_constraintStart_toEndOf="@id/tvAddress"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvPostedBy"
             android:text="Kolkata"
+            android:layout_marginEnd="5dp"
             android:textSize="12dp"
             android:textStyle="bold"
             android:layout_marginTop="2dp"
             android:textColor="#00448D"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnAccept"
             android:layout_width="89dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/tvAddressName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
             android:text="Accept"
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/green"

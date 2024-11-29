@@ -30,16 +30,16 @@
                 android:layout_height="48dp"
                 android:background="#6EB53B">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvChooseFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Choose A Fees And Make Payment"
-                    android:textSize="18sp"
+                    android:textSize="14sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
-                <ImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivClose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 app:layout_constraintTop_toBottomOf="@id/toolbar"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvNoData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 app:layout_constraintBottom_toTopOf="@id/rejectButton"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/rejectButton"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"

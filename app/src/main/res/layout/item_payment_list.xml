@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         >
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRupee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_margin="10dp"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:textColor="#00448D"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:textColor="#2A4767"
             android:textSize="10sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPaymentId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,11 +63,26 @@
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTransactionId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvPaymentId"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@id/btnSuccessful"
+            android:text="#1234567890"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#2A4767"
+            android:textSize="12sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPaymentMethod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvPaymentId"
+            app:layout_constraintTop_toBottomOf="@id/tvTransactionId"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="10dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,11 +93,11 @@
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPaymentMethodName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvPaymentId"
+            app:layout_constraintTop_toBottomOf="@id/tvTransactionId"
             app:layout_constraintLeft_toRightOf="@id/tvPaymentMethod"
             android:text="Bank"
             android:layout_marginTop="5dp"
@@ -92,7 +107,7 @@
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnSuccessful"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +117,7 @@
             android:text="Successful"
             android:drawableStart="@drawable/tickcheck"
             android:gravity="center"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/green"
             android:textColor="@color/white"
@@ -113,7 +128,7 @@
             android:layout_marginTop="10dp"
             android:textSize="10sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnUnSuccessful"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

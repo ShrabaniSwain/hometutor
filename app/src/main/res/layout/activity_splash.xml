@@ -7,9 +7,10 @@
     android:background="@color/white"
     tools:context=".SplashActivity">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splashlogo"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_screen"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

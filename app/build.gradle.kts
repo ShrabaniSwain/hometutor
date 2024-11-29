@@ -4,16 +4,16 @@ plugins {
 }
 
 android {
-    namespace = "com.flyngener.hometutor"
+    namespace = "com.flyngener.tutorhub"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.flyngener.hometutor"
+        applicationId = "com.flyngener.tutorhub"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
+        versionCode = 4
+        versionName = "1.3"
+        buildConfigField("Double", "VERSION_NAME", versionName!!)
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,6 +40,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -54,7 +57,7 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation ("com.razorpay:checkout:1.6.38")
-    implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.1")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")

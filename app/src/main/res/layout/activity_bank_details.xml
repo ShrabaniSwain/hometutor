@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvKyc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                     android:layout_marginTop="90dp"
                     />
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etBankName"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -60,7 +60,7 @@
                     app:layout_constraintTop_toBottomOf="@id/tvKyc"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etAccountName"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -77,7 +77,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etBankName"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etAccountNumber"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -94,7 +94,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etAccountName"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etIFSCCode"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -111,7 +111,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etAccountNumber"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etBranchName"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -128,7 +128,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etIFSCCode"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -147,17 +147,19 @@
                     android:background="@drawable/edit_text_background_box"/>
 
                 <LinearLayout
+                    android:id="@+id/alreadySignIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintTop_toBottomOf="@id/btnNext"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="16dp"
+                    android:visibility="invisible"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="37dp">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvDontHaveAcc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -165,7 +167,7 @@
                         android:textColor="#6D6D6D"
                         android:textSize="15sp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvRegisterNow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -194,7 +196,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivHomeTutorCircle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

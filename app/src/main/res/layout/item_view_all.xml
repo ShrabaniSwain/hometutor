@@ -27,7 +27,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvServiceName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,20 @@
             android:layout_marginStart="10dp"
             android:textSize="14sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvServiceName"
+            app:layout_constraintLeft_toRightOf="@id/imageView"
+            android:text="Service Name"
+            android:textStyle="bold"
+            android:textColor="#00448D"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvdateAndtime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,11 +66,11 @@
             android:layout_marginStart="10dp"
             android:textSize="10sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvServiceName"
+            app:layout_constraintTop_toBottomOf="@id/tvLocationName"
             app:layout_constraintLeft_toRightOf="@id/imageView"
             android:text="Details:"
             android:textStyle="bold"
@@ -66,20 +79,19 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDetailsName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvServiceName"
             app:layout_constraintLeft_toRightOf="@id/tvDetails"
-            android:text="Cat 1, Cat 2, Cat 3"
             android:textStyle="bold"
             android:textColor="#00448D"
             android:layout_marginTop="4dp"
             android:layout_marginStart="8dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/paid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +110,7 @@
             android:drawablePadding="5dp"
             android:textSize="10sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRpee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,7 +123,7 @@
             android:layout_marginTop="10dp"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,7 +137,7 @@
             android:layout_marginTop="10dp"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,7 +150,7 @@
             android:layout_marginEnd="5dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvIncDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -151,24 +163,25 @@
             android:layout_marginEnd="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFeaturedDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/imageView"
             app:layout_constraintRight_toLeftOf="@id/tvIncDetails"
+            android:visibility="gone"
             android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor invidunt ut voluptua?"
             android:textColor="#98A1AB"
             android:layout_marginTop="22dp"
             android:layout_marginHorizontal="16dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/acceptBtn"
             android:layout_width="118dp"
             android:layout_height="35dp"
             android:layout_marginStart="20dp"
-            app:layout_constraintTop_toBottomOf="@id/tvFeaturedDetails"
+            app:layout_constraintTop_toBottomOf="@id/tvDetails"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

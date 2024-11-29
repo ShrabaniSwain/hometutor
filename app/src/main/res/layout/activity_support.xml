@@ -16,14 +16,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back_button"
             app:tint="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Support"
@@ -34,7 +34,7 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvSubject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         android:textColor="#2A4767"
         android:layout_margin="16dp"/>
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etSubjectSelect"
         android:layout_width="match_parent"
         android:layout_height="42dp"
@@ -60,7 +60,7 @@
         android:hint="|"/>
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvSelectAppointment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:textColor="#2A4767"
         android:layout_margin="16dp"/>
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/etSelectAppointmentId"
         android:layout_width="match_parent"
         android:layout_height="42dp"
@@ -87,7 +87,7 @@
         android:background="@drawable/border_color_highlight"
         android:hint="Select"/>
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etRequirements"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
         app:drawableTint="#6EB53B" />
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnSendEnquiry"
         android:layout_width="match_parent"
         android:layout_height="52dp"

@@ -30,7 +30,7 @@
                 android:layout_height="48dp"
                 android:background="#6EB53B">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvReasons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
-                <ImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivClose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
 
             </androidx.appcompat.widget.Toolbar>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etRequirements"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 android:background="@drawable/border_color_highlight"
                 app:drawableTint="#6EB53B" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/rejectButton"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"

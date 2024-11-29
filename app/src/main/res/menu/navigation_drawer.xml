@@ -14,20 +14,20 @@
 
     <group android:id="@+id/group2"
         android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_enquiry"
-        android:title="Enquiry"
-        app:actionLayout="@layout/menu_item_with_line"
-        android:icon="@drawable/enquiry"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_enquiry"-->
+<!--        android:title="Enquiry"-->
+<!--        app:actionLayout="@layout/menu_item_with_line"-->
+<!--        android:icon="@drawable/enquiry"/>-->
     </group>
 
     <group android:id="@+id/group3"
         android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_my_request"
-        android:title="My Request"
-        app:actionLayout="@layout/menu_item_with_line"
-        android:icon="@drawable/request"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_my_request"-->
+<!--        android:title="My Request"-->
+<!--        app:actionLayout="@layout/menu_item_with_line"-->
+<!--        android:icon="@drawable/request"/>-->
     </group>
 
     <group android:id="@+id/group4"
@@ -41,11 +41,11 @@
 
     <group android:id="@+id/group5"
         android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_review"
-        android:title="Review"
-        app:actionLayout="@layout/menu_item_with_line"
-        android:icon="@drawable/review"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_review"-->
+<!--        android:title="Review"-->
+<!--        app:actionLayout="@layout/menu_item_with_line"-->
+<!--        android:icon="@drawable/review"/>-->
     </group>
 
     <group android:id="@+id/group6"

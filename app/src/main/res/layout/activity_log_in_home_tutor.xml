@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etUserId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,8 @@
             app:layout_constraintTop_toBottomOf="@id/etUserId"
             android:orientation="horizontal">
 
-            <EditText
+
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +79,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvForgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
                 android:layout_marginEnd="15dp"
                 android:textSize="16sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +109,7 @@
                 android:backgroundTint="@color/background_color"
                 android:background="@drawable/edit_text_background_box"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvUserIdPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,7 +134,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="37dp">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvDontHaveAcc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,7 +142,7 @@
                     android:textColor="#6D6D6D"
                     android:textSize="15sp" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvRegisterNow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -154,6 +155,16 @@
             </LinearLayout>
 
 
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:indeterminateTint="@color/background_color"
+                android:visibility="gone" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
@@ -172,7 +183,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivHomeTutorCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

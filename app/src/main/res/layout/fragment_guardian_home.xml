@@ -27,43 +27,46 @@
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLocationName"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tvSwitchTeacher"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_marginEnd="5dp"
             android:layout_height="wrap_content"
-            android:text="Birati, Kolkata, 700051"
             android:textColor="@color/white"
             android:textSize="16sp"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivNotification"
             android:layout_width="50dp"
             android:layout_height="35dp"
+            android:visibility="gone"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/notifications"
             android:layout_marginEnd="15dp"
             app:tint="@color/white" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSwitchTeacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Switch Teacher"
                 android:textColor="#6EB53B"
+                android:visibility="gone"
                 android:background="@drawable/green_border_color"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/ivNotification"
                 android:textStyle="bold"
-                android:layout_marginEnd="15dp"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="5dp"
                 android:textSize="14sp"
                 />
 
-        <AutoCompleteTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/etSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,7 +83,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivNotification"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="10dp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -115,17 +118,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_color">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivScience"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:src="@drawable/science"
                 android:layout_marginTop="18dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvScience"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -160,17 +163,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_color">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivMath"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:src="@drawable/math"
                 android:layout_marginTop="18dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvMath"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -203,17 +206,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_color">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivEnglish"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:src="@drawable/english"
                 android:layout_marginTop="18dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvEnglish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -242,7 +245,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/scienceTeacherCardView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -251,17 +254,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_color">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivGeography"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:src="@drawable/geography"
                 android:layout_marginTop="18dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvGeography"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -286,7 +289,7 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         android:background="@color/white"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintLeft_toRightOf="@id/scienceTeacherCardView"
         app:layout_constraintRight_toLeftOf="@id/englishTeacherCard"
         android:layout_marginTop="25dp"
@@ -297,17 +300,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/border_color">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivBiology"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:src="@drawable/biology"
                 android:layout_marginTop="18dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvBiology"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -340,7 +343,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivMore"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -350,7 +353,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="More"
@@ -365,7 +368,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvFeatured"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -410,7 +413,18 @@
         app:layout_constraintTop_toBottomOf="@id/view2"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:text="No data to show."/>
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/bannerImageView"
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -421,7 +435,7 @@
         app:layout_constraintTop_toBottomOf="@id/rvClass"
         android:scaleType="centerCrop" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPopularServices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

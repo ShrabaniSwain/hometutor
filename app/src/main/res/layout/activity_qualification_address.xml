@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etQualification"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -46,7 +46,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etExperience"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -63,7 +63,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etQualification"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/etDob"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -84,7 +84,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etExperience"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/etAge"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -102,7 +102,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etDob"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/etGender"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -120,7 +120,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etAge"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etAbout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -138,13 +138,14 @@
                     app:layout_constraintTop_toBottomOf="@id/etGender"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAdress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/etAbout"
                     android:text="Adress"
+                    android:visibility="gone"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#242134"
@@ -158,6 +159,7 @@
                     android:layout_height="55dp"
                     android:textSize="16sp"
                     android:hint="City"
+                    android:visibility="gone"
                     android:textColorHint="#A1A1A1"
                     android:padding="14dp"
                     android:drawableEnd="@drawable/arrow_down"
@@ -169,12 +171,13 @@
                     app:layout_constraintTop_toBottomOf="@id/tvAdress"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etState"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:textSize="16sp"
                     android:hint="State"
+                    android:visibility="gone"
                     android:textColorHint="#A1A1A1"
                     android:padding="14dp"
                     android:textColor="@color/black"
@@ -185,12 +188,13 @@
                     app:layout_constraintTop_toBottomOf="@id/etCity"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etPincode"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:textSize="16sp"
                     android:hint="Pincode"
+                    android:visibility="gone"
                     android:textColorHint="#A1A1A1"
                     android:padding="14dp"
                     android:textColor="@color/black"
@@ -203,7 +207,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etState"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etFullAddress"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -211,6 +215,7 @@
                     android:hint="Full Address "
                     android:textColorHint="#A1A1A1"
                     android:padding="14dp"
+                    android:visibility="gone"
                     android:textColor="@color/black"
                     android:inputType="text"
                     android:layout_marginTop="15dp"
@@ -220,7 +225,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etPincode"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -239,17 +244,19 @@
                     android:background="@drawable/edit_text_background_box"/>
 
                 <LinearLayout
+                    android:id="@+id/alreadySignIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintTop_toBottomOf="@id/btnNext"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="16dp"
+                    android:visibility="invisible"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="37dp">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvDontHaveAcc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -257,7 +264,7 @@
                         android:textColor="#6D6D6D"
                         android:textSize="15sp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvRegisterNow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -268,7 +275,16 @@
                         android:textSize="15sp" />
 
                 </LinearLayout>
-
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:indeterminateTint="@color/background_color"
+                    android:visibility="gone" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -286,7 +302,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivHomeTutorCircle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

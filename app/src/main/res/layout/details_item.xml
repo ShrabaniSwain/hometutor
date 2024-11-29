@@ -27,7 +27,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvGuardians"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,19 +40,18 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvGuardiansName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@id/tvGuardians"
-            android:text="Sudip Das"
             android:textStyle="bold"
             android:textColor="#00448D"
             android:layout_marginTop="16dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRegistrationId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +63,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRegistrationIdNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +74,7 @@
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +86,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDateNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +97,7 @@
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,7 +109,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvMobileNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,7 +120,7 @@
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +132,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvEmailId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -155,9 +154,10 @@
             android:layout_marginEnd="10dp"
             android:numStars="5"
             android:rating="4"
+            android:visibility="invisible"
             android:layout_marginTop="16dp"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnCall"
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -190,7 +190,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvStudent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvStudentName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -215,7 +215,7 @@
             android:layout_marginTop="16dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -227,7 +227,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDobDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -238,7 +238,7 @@
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAgeNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -261,81 +261,47 @@
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvUnit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvAge"
             app:layout_constraintLeft_toRightOf="@id/imageView2"
-            android:text="Medium : "
+            android:text="Unit1 : "
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
-            android:id="@+id/tvUnit1No"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvAge"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit1"
-            android:text="3"
-            android:textStyle="bold"
-            android:textColor="#00448D"
-            android:textSize="12sp"/>
-
-        <TextView
-            android:id="@+id/tvUnit2"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFeesAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvUnit1"
             app:layout_constraintLeft_toRightOf="@id/imageView2"
-            android:text="Board : "
+            android:text="Fees amount : "
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
-            android:id="@+id/tvUnit2No"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFeesAmountValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit1"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit2"
-            android:text="ICSC"
+            app:layout_constraintTop_toTopOf="@id/tvFeesAmount"
+            app:layout_constraintLeft_toRightOf="@id/tvFeesAmount"
             android:textStyle="bold"
             android:textColor="#00448D"
             android:textSize="12sp"/>
 
-        <TextView
-            android:id="@+id/tvUnit3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit2"
-            app:layout_constraintLeft_toRightOf="@id/imageView2"
-            android:text="Class : "
-            android:textStyle="bold"
-            android:textColor="#2A4767"
-            android:layout_marginStart="10dp"
-            android:textSize="12sp"/>
-
-        <TextView
-            android:id="@+id/tvUnit3No"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit2"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit3"
-            android:text="Bengali"
-            android:textStyle="bold"
-            android:textColor="#00448D"
-            android:textSize="12sp"/>
-
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnEdit"
             android:layout_width="23dp"
             android:layout_height="31dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="10dp"
+            android:visibility="invisible"
             app:layout_constraintTop_toBottomOf="@id/tvStudentName"
             android:src="@drawable/profile"/>
 
@@ -343,14 +309,14 @@
             android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit3No"
+            app:layout_constraintTop_toBottomOf="@id/tvFeesAmount"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="#CCDCEE"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointmentDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -363,30 +329,34 @@
             android:textColor="#00448D"
             android:textSize="16sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvEnablePayment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/ivToggleBtn"
+            app:layout_constraintBottom_toBottomOf="@id/ivToggleBtn"
             app:layout_constraintRight_toLeftOf="@id/ivToggleBtn"
             android:text="Enable Payment"
-            android:layout_marginTop="13dp"
             android:layout_marginEnd="5dp"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-
-        <ImageView
+        <ToggleButton
             android:id="@+id/ivToggleBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:layout_margin="10dp"
+            android:textOff=""
+            android:textOn=""
+            android:text=""
             app:layout_constraintTop_toBottomOf="@id/view1"
             app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/btntoggleon" />
+            android:background="@drawable/toggle_selector"
+            android:checked="false" />
 
-        <TextView
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvSurviceName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -399,7 +369,7 @@
             android:textColor="#00448D"
             android:textSize="14sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvRpee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -411,7 +381,7 @@
             android:layout_marginTop="10dp"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -424,7 +394,7 @@
             android:layout_marginTop="10dp"
             android:textSize="18sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointmentId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -437,7 +407,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointmentIdNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -449,53 +419,57 @@
             android:layout_marginTop="8dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvAppointmentId"
             app:layout_constraintStart_toStartOf="parent"
             android:text="Location : "
+            android:visibility="gone"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLocationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvAppointmentIdNo"
             app:layout_constraintLeft_toRightOf="@id/tvLocation"
             android:text="Cooch Behar"
+            android:visibility="gone"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvWeek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvLocation"
             app:layout_constraintStart_toStartOf="parent"
             android:text="Week Days : "
+            android:visibility="gone"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvWeekDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvLocationName"
             app:layout_constraintLeft_toRightOf="@id/tvWeek"
             android:text="Sun, Mon"
+            android:visibility="gone"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFeesDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -507,7 +481,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvFeesDateNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -518,7 +492,7 @@
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointedDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -530,7 +504,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointedDateNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -541,30 +515,29 @@
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPerUnit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvAppointedDate"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Per Unit : "
+            android:text="Appointment Location : "
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPerUnitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvAppointedDate"
             app:layout_constraintLeft_toRightOf="@id/tvPerUnit"
-            android:text="{Value}"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBtnDueDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -597,7 +570,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnPaid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -608,7 +581,7 @@
             android:drawablePadding="5dp"
             android:textSize="10sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPaidAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -621,7 +594,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnResign"
             android:layout_width="match_parent"
             android:layout_height="50dp"

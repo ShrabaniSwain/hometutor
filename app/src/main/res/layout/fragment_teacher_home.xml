@@ -14,12 +14,13 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:background="@color/guardian_background_color"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Home"
@@ -28,7 +29,7 @@
             android:textSize="20sp"
             android:layout_gravity="start"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
             android:layout_marginEnd="15dp"
             app:tint="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvSwitchGuardian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvEarned"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +84,7 @@
                 android:layout_margin="10dp"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvEarnedPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,7 +93,6 @@
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:text="₹1900"
                 android:layout_marginStart="10dp"
                 />
 
@@ -106,7 +106,8 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         android:backgroundTint="#2A4767"
-        app:layout_constraintLeft_toRightOf="@id/earnedCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/toolbar">
@@ -114,7 +115,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPending"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +128,7 @@
                 android:layout_margin="10dp"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPendingPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,14 +137,13 @@
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:text="₹900"
                 android:layout_marginStart="10dp"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivAttendance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -152,6 +152,7 @@
         android:background="@drawable/circle_background_image"
         android:foregroundGravity="center"
         android:padding="8dp"
+        android:visibility="gone"
         android:src="@drawable/attendance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
@@ -172,69 +173,75 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tvCompleteProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Complete Profile"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="10dp"
-                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/noimageavailbale"
+                android:scaleType="fitXY"/>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvCompleteProfile"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Complete Profile"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
 
-            <TextView
-                android:id="@+id/tvCompleteProfileDetails"
-                android:layout_width="205dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvCompleteProfile"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:lineSpacingExtra="@dimen/dp_1"
-                android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod."
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvCompleteProfileDetails"-->
+<!--                android:layout_width="205dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvCompleteProfile"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="10sp"-->
+<!--                android:lineSpacingExtra="@dimen/dp_1"-->
+<!--                android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod."-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
 
-            <TextView
-                android:id="@+id/btnCompleteProfile"
-                android:layout_width="119dp"
-                android:layout_height="28dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCompleteProfileDetails"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:text="Complete Now"
-                android:gravity="center"
-                android:backgroundTint="@color/guardian_background_color"
-                android:background="@drawable/rounded_button"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="8dp"
-                />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/btnCompleteProfile"-->
+<!--                android:layout_width="119dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvCompleteProfileDetails"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Complete Now"-->
+<!--                android:gravity="center"-->
+<!--                android:backgroundTint="@color/guardian_background_color"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                />-->
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:scaleType="fitXY"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:shapeAppearanceOverlay="@style/CircleImageView"
-                app:srcCompat="@drawable/profileimage" />
+<!--            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="85dp"-->
+<!--                android:layout_height="85dp"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:shapeAppearanceOverlay="@style/CircleImageView"-->
+<!--                app:srcCompat="@drawable/profileimage" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvFeatured"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -257,7 +264,7 @@
         app:layout_constraintLeft_toRightOf="@id/tvFeatured"
         android:background="#6EB53B" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvViewAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -274,7 +281,7 @@
         app:drawableTint="@color/green"
         app:drawableEndCompat="@drawable/arrow_green" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/forwardArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -306,7 +313,18 @@
         app:layout_constraintTop_toBottomOf="@id/view2"
         />
 
-    <TextView
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoDataFeatured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintBottom_toTopOf="@id/tvActiveList"
+            android:text="No data to show."/>
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvActiveList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -338,6 +356,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvActiveList"
         />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvActiveList"
+            android:text="No data to show."/>
 
         <ProgressBar
             android:id="@+id/progressBar"

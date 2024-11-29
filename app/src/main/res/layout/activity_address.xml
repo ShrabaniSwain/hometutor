@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAdress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                     android:layout_marginTop="90dp"
                     />
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etCity"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -61,7 +61,7 @@
                     app:layout_constraintTop_toBottomOf="@id/tvAdress"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etState"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -78,7 +78,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etCity"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etPincode"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -95,7 +95,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etState"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etFullAddress"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -112,7 +112,7 @@
                     app:layout_constraintTop_toBottomOf="@id/etPincode"
                     android:background="@drawable/edit_text_background_box"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
@@ -141,7 +141,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="37dp">
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvDontHaveAcc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                         android:textColor="#6D6D6D"
                         android:textSize="15sp" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tvRegisterNow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivHomeTutorCircle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="163dp"
-    android:layout_height="235dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
@@ -26,7 +26,7 @@
             app:cardCornerRadius="50dp"
             app:cardBackgroundColor="@color/white">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivEditProfileImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -34,11 +34,10 @@
                 android:src="@drawable/profileimage" />
         </androidx.cardview.widget.CardView>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvClassName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Science Teacher"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="15sp"
@@ -47,30 +46,46 @@
             android:textColor="#2A4767"
             android:textStyle="bold"
             />
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvClassBoard"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CBSC Board"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="5dp"
             app:layout_constraintTop_toBottomOf="@id/tvClassName"
             android:textColor="#6EB53B"
             />
-        <TextView
-            android:id="@+id/tvClassSession"
-            android:layout_width="wrap_content"
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExperience"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Class x, xi, xii"
+            android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="12sp"
+            android:layout_marginHorizontal="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tvClassSession"
+            android:textColor="#6EB53B"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvClassSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="5dp"
             app:layout_constraintTop_toBottomOf="@id/tvClassBoard"
             android:textColor="#98A1AB"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnEnquiryNow"
             android:layout_width="119dp"
             android:layout_height="35dp"
@@ -81,7 +96,9 @@
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvExperience"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
             android:backgroundTint="#6EB53B"
             android:layout_marginBottom="12dp"
             android:background="@drawable/edit_text_background_box"/>

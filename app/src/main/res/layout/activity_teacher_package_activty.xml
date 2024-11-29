@@ -10,7 +10,7 @@ tools:context=".TeacherPackageActivity">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-<TextView
+<androidx.appcompat.widget.AppCompatTextView
     android:id="@+id/tvBack"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -25,17 +25,18 @@ tools:context=".TeacherPackageActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"/>
 
-<ImageView
+<androidx.appcompat.widget.AppCompatImageView
     android:id="@+id/ivWallet"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:src="@drawable/baseline_account_balance_wallet_24"
     app:layout_constraintTop_toTopOf="parent"
+    android:visibility="gone"
     app:layout_constraintRight_toLeftOf="@id/ivNotification"
     android:layout_marginEnd="15dp"
     android:layout_marginTop="15dp"/>
 
-<ImageView
+<androidx.appcompat.widget.AppCompatImageView
     android:id="@+id/ivNotification"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -45,7 +46,7 @@ tools:context=".TeacherPackageActivity">
     android:layout_marginEnd="15dp"
     android:layout_marginTop="15dp"/>
 
-<TextView
+<androidx.appcompat.widget.AppCompatTextView
     android:id="@+id/tvOngoingClass"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -58,7 +59,7 @@ tools:context=".TeacherPackageActivity">
     android:textColor="#242134"
     android:textSize="18sp" />
 
-<ImageView
+<androidx.appcompat.widget.AppCompatImageView
     android:id="@+id/ivPackage"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -67,6 +68,12 @@ tools:context=".TeacherPackageActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginTop="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pacakageCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivPackage">
 
 <androidx.cardview.widget.CardView
     android:id="@+id/starterCatdView"
@@ -77,9 +84,9 @@ tools:context=".TeacherPackageActivity">
     android:backgroundTint="#5D9528"
     app:cardCornerRadius="8dp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/ivPackage">
+    app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tickStarter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +100,7 @@ tools:context=".TeacherPackageActivity">
         android:layout_height="match_parent"
         android:layout_marginBottom="13dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvStarter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,7 +113,7 @@ tools:context=".TeacherPackageActivity">
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvUnlimited"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
@@ -119,17 +126,19 @@ tools:context=".TeacherPackageActivity">
             android:text="Get unlimited demo request"
             app:layout_constraintTop_toBottomOf="@id/tvStarter"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivStarter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
             android:src="@drawable/starterimage"
+            android:scaleType="fitXY"
             app:layout_constraintTop_toBottomOf="@id/tvUnlimited"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="15dp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvStarterAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,7 +151,7 @@ tools:context=".TeacherPackageActivity">
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/ivStarter"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvStarterMonthly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,9 +176,9 @@ tools:context=".TeacherPackageActivity">
     android:backgroundTint="#298AD1"
     app:cardCornerRadius="8dp"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/ivPackage">
+    app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tickPremium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -183,7 +192,7 @@ tools:context=".TeacherPackageActivity">
         android:layout_height="match_parent"
         android:layout_marginBottom="13dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPremium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -196,7 +205,7 @@ tools:context=".TeacherPackageActivity">
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvUnlimitedRequest"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
@@ -209,17 +218,19 @@ tools:context=".TeacherPackageActivity">
             android:text="Get unlimited demo request"
             app:layout_constraintTop_toBottomOf="@id/tvPremium"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivPremium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:src="@drawable/starterimage"
+            android:layout_marginHorizontal="30dp"
             app:layout_constraintTop_toBottomOf="@id/tvUnlimitedRequest"
             app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="15dp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPremiumAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -230,10 +241,10 @@ tools:context=".TeacherPackageActivity">
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="₹2200"
+            android:text="₹0"
             app:layout_constraintTop_toBottomOf="@id/ivPremium"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPremiumYearly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -243,14 +254,15 @@ tools:context=".TeacherPackageActivity">
             android:layout_marginTop="8dp"
             android:textColor="@color/white"
             android:textSize="13sp"
-            android:text="Yearly"
+            android:text=""
             app:layout_constraintTop_toBottomOf="@id/tvPremiumAmount"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
 
-<TextView
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.appcompat.widget.AppCompatTextView
     android:id="@+id/btnSubmit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -264,7 +276,7 @@ tools:context=".TeacherPackageActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginHorizontal="15dp"
-    app:layout_constraintTop_toBottomOf="@id/premiumCatdView"
+    app:layout_constraintTop_toBottomOf="@id/pacakageCard"
     android:backgroundTint="@color/background_color"
     android:layout_marginBottom="15dp"
     app:layout_constraintBottom_toBottomOf="parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="175dp"
+    android:layout_width="168dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
@@ -28,7 +28,7 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,60 +41,20 @@
             android:layout_marginStart="10dp"
             android:textSize="14sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvUnit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvName"
             app:layout_constraintLeft_toRightOf="@id/imageView"
-            android:text="Unit 2 :"
+            android:text="Unit 1 :"
             android:textStyle="bold"
             android:textColor="#00448D"
             android:layout_marginTop="3dp"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
-            android:id="@+id/tvUnit1Name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvName"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit1"
-            android:text="ICSC"
-            android:textStyle="bold"
-            android:textColor="#00448D"
-            android:layout_marginTop="3dp"
-            android:layout_marginStart="2dp"
-            android:textSize="12sp"/>
-
-
-        <TextView
-            android:id="@+id/tvUnit2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit1"
-            app:layout_constraintLeft_toRightOf="@id/imageView"
-            android:text="Unit 3 :"
-            android:textStyle="bold"
-            android:textColor="#00448D"
-            android:layout_marginTop="3dp"
-            android:layout_marginStart="10dp"
-            android:textSize="12sp"/>
-
-        <TextView
-            android:id="@+id/tvUnit2Name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tvUnit1"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit1"
-            android:text="Bengali"
-            android:textStyle="bold"
-            android:textColor="#00448D"
-            android:layout_marginTop="3dp"
-            android:layout_marginStart="8dp"
-            android:textSize="12sp"/>
-
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointmentId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,7 +67,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointmentIdNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -119,7 +79,7 @@
             android:layout_marginTop="13dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +92,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLocationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,20 +104,21 @@
             android:layout_marginTop="3dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvWeek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tvLocation"
             app:layout_constraintStart_toStartOf="parent"
             android:text="Week Days :"
+            android:visibility="gone"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginTop="3dp"
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvWeekDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,11 +126,12 @@
             app:layout_constraintLeft_toRightOf="@id/tvWeek"
             android:text="Sun, Mon"
             android:textStyle="bold"
+            android:visibility="gone"
             android:textColor="#00448D"
             android:layout_marginTop="3dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointedAs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -182,7 +144,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAppointedTeacherName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -194,7 +156,7 @@
             android:layout_marginTop="3dp"
             android:textSize="12sp"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnCall"
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -204,7 +166,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvAppointedAs"
             android:src="@drawable/call"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnInfo"
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -214,7 +176,7 @@
             app:layout_constraintStart_toEndOf="@id/btnCall"
             app:layout_constraintTop_toBottomOf="@id/tvAppointedAs" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnTask"
             android:layout_width="75dp"
             android:layout_height="35dp"

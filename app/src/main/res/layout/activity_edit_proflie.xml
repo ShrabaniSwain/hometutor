@@ -20,14 +20,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/back_button"
                 app:tint="@color/white" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Profile"
@@ -49,7 +49,7 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/border_color">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPersonalDetailsClose"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -75,7 +75,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPersonalDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,6 +89,21 @@
                 android:drawableEnd="@drawable/baseline_keyboard_arrow_up_24"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnSaveProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvPersonalDetails"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_background_color"/>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView"
@@ -114,7 +129,7 @@
                 app:srcCompat="@drawable/camera" />
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +142,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etNameSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -140,10 +155,9 @@
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="Sudip Das"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvEmailID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,7 +170,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etEmailIDSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -165,14 +179,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
+                android:singleLine="true"
                 android:padding="8dp"
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="sudip@gmail.com"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvPhoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -185,7 +199,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPhoneNumberSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -195,13 +209,14 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
                 android:padding="8dp"
+                android:maxLength="10"
                 android:textSize="18sp"
+                android:singleLine="true"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="9733782373"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvQualification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -214,7 +229,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etQualificationSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -227,10 +242,9 @@
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="Graduate"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvExperience"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -243,7 +257,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etExperienceSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -256,10 +270,9 @@
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="2 years"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -272,7 +285,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/etDObSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -283,15 +296,15 @@
                 android:layout_marginTop="5dp"
                 android:padding="8dp"
                 android:textSize="18sp"
+                android:gravity="start|center"
                 android:textColor="#6F7882"
                 android:drawableTint="@color/green"
                 android:drawablePadding="5dp"
                 android:drawableStart="@drawable/baseline_calendar_month_24"
                 android:background="@drawable/border_color_highlight"
-                android:text="March 6 1992"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -304,7 +317,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etAgeSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -317,10 +330,9 @@
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="30 Years"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -333,7 +345,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etGenderSelect"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -346,10 +358,9 @@
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="Male"
                 />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAbout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -362,7 +373,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginHorizontal="10dp"/>
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etAboutSelect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -373,11 +384,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
+                android:paddingVertical="15dp"
                 android:padding="8dp"
                 android:textSize="18sp"
                 android:textColor="#6F7882"
                 android:background="@drawable/border_color_highlight"
-                android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam onumy eirmod tempor invidunt ut voluptua At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
                 />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -393,7 +404,7 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/border_color">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAddressDetailsClose"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -419,7 +430,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAddressDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -434,11 +445,26 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnSaveAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddressDetails"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_background_color"/>
+
+                <AutoCompleteTextView
                     android:id="@+id/tvAddressNameSelect"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/tvAddressDetails"
+                    app:layout_constraintTop_toBottomOf="@id/btnSaveAddress"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -449,7 +475,6 @@
                     android:drawableStart="@drawable/address"
                     android:drawablePadding="5dp"
                     android:background="@drawable/border_color_highlight"
-                    android:text="23/1 Mohajyoti, Block 5, Beside Sargam Studio, Birati, Kolkata, 700051"
                     />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -465,7 +490,7 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/border_color">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvServiceDetailsClose"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -491,7 +516,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnSaveService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvServicesDetails"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_background_color"/>
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvServicesDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -505,19 +544,32 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Profile"
+                    android:textStyle="bold"
+                    android:textColor="#00448D"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:drawableTint="@color/green"
+                    android:drawableEnd="@drawable/baseline_keyboard_arrow_up_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnSaveService" />
+
+                <AutoCompleteTextView
                     android:id="@+id/tvServicesNameSelect"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/tvServicesDetails"
+                    app:layout_constraintTop_toBottomOf="@id/tvServices"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_margin="10dp"
                     android:padding="8dp"
+                    android:hint="Select"
                     android:textSize="18sp"
-                    android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="Services"
                     />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -529,10 +581,19 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="15dp"
                     app:layout_constraintTop_toBottomOf="@id/tvServicesNameSelect"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvUnitList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvServices"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="10dp"
                     />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -547,7 +608,7 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/border_color">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvKycClose"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -573,7 +634,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvKycDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -586,13 +647,26 @@
                     android:drawableEnd="@drawable/baseline_keyboard_arrow_up_24"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnSaveKyc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvKycDetails"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_background_color"/>
 
-
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvVotarId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/tvKycDetails"
+                    app:layout_constraintTop_toBottomOf="@id/btnSaveKyc"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="Votar Id Number"
                     android:textSize="18sp"
@@ -601,7 +675,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etVotarIdNumber"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -614,10 +689,9 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="WB 25 E 12345"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAadharId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -630,7 +704,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etAadharIdNo"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -644,10 +718,9 @@
                     android:textColor="#6F7882"
                     android:inputType="number"
                     android:background="@drawable/border_color_highlight"
-                    android:text="1234 1245 4568"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvPanNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -660,7 +733,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etPanNumberNo"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -673,10 +746,9 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="AOPT 124 D 24"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvDrivingLicense"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -689,7 +761,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etDrivingLicenseNo"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -704,7 +776,6 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="WB 25 E 12345"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -723,7 +794,7 @@
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/border_color">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvBankDetailsClose"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -749,7 +820,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvBankDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -763,12 +834,26 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnSaveBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvBankDetails"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/green_background_color"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvBank"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/tvBankDetails"
+                    app:layout_constraintTop_toBottomOf="@id/btnSaveBank"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="Bank Name"
                     android:textSize="18sp"
@@ -777,7 +862,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etBankName"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -790,10 +875,9 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="ICICI Bank"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAccountHolder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -806,7 +890,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etAccountHolderName"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -818,12 +902,11 @@
                     android:padding="8dp"
                     android:textSize="18sp"
                     android:textColor="#6F7882"
-                    android:inputType="number"
+                    android:inputType="textPersonName"
                     android:background="@drawable/border_color_highlight"
-                    android:text="Sudip Das"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAccountNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -836,7 +919,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etBankAccountNumber"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -849,10 +932,9 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="1234567891234568"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvIFSC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -865,7 +947,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etIFSCCode"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -878,10 +960,9 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="ICICI006"
                     />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvBranch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -894,7 +975,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginHorizontal="10dp"/>
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/etBranchName"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -909,10 +990,19 @@
                     android:textSize="18sp"
                     android:textColor="#6F7882"
                     android:background="@drawable/border_color_highlight"
-                    android:text="Bidhannagar Branch"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:indeterminateTint="@color/guardian_color"
+                android:visibility="gone" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

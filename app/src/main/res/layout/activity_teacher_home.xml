@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/guardian_background_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menu"
@@ -24,7 +24,7 @@
             android:textSize="20sp"
             android:layout_gravity="center"/>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,6 +46,116 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbarView"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarHome"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/guardian_background_color"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNotification1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notifications"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                app:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSwitchGuardian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch Gurdian"
+                android:textColor="#6EB53B"
+                android:background="@drawable/green_border_color"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="5dp"
+                android:textSize="14sp"
+                android:layout_gravity="end"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarRequest"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:background="@color/guardian_background_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requests"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNotificationRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notifications"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    app:tint="@color/white" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarPayment"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/guardian_background_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payments"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivNotificationPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/notifications"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="15dp"
+                        app:tint="@color/white" />
+
+                </androidx.appcompat.widget.Toolbar>
+            </androidx.constraintlayout.widget.ConstraintLayout>
             <FrameLayout
                 android:id="@+id/container"
                 android:layout_width="match_parent"
@@ -53,7 +163,7 @@
                 app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/toolbarView"/>
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
@@ -92,7 +202,8 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="center">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/versionId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -106,5 +217,15 @@
         </com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminateTint="@color/guardian_color"
+        android:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
                 android:layout_height="48dp"
                 android:background="#6EB53B">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvFeatured"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
-                <ImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivClose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 app:shapeAppearanceOverlay="@style/CircleImageView"
                 app:srcCompat="@drawable/profileimage" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="20sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:layout_marginEnd="16dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                 android:layout_marginStart="5dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAgeNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,96 +140,30 @@
                 android:layout_marginStart="5dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvDob"
-                app:layout_constraintLeft_toRightOf="@id/tvAgeNo"
+                app:layout_constraintTop_toBottomOf="@id/tvAgeNo"
+                app:layout_constraintStart_toStartOf="@id/tvAge"
                 android:text="Cat 1: "
                 android:textStyle="bold"
                 android:textColor="#00448D"
                 android:layout_marginTop="4dp"
-                android:layout_marginStart="10dp"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/tvCatRank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvDate"
-                app:layout_constraintLeft_toRightOf="@id/tvCat"
-                android:text="3"
-                android:textStyle="bold"
-                android:textColor="#00448D"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="5dp"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/tvCat2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvAge"
-                app:layout_constraintLeft_toRightOf="@id/imageView"
-                android:text="Cat 2:"
-                android:textStyle="bold"
-                android:textColor="#00448D"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="10dp"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/tvCatRank2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvAgeNo"
-                app:layout_constraintLeft_toRightOf="@id/tvCat2"
-                android:text="ICSC"
-                android:textStyle="bold"
-                android:textColor="#00448D"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="5dp"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/tvCat3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvCat2"
-                app:layout_constraintLeft_toRightOf="@id/imageView"
-                android:text="Cat 3:"
-                android:textStyle="bold"
-                android:textColor="#00448D"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="10dp"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/tvCatRank3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tvCatRank2"
-                app:layout_constraintLeft_toRightOf="@id/tvCat3"
-                android:text="Bengali"
-                android:textStyle="bold"
-                android:textColor="#00448D"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="5dp"
                 android:textSize="12sp"/>
 
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                app:layout_constraintTop_toBottomOf="@id/tvCat3"
+                app:layout_constraintTop_toBottomOf="@id/tvCat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="10dp"
                 android:background="#8FB9E6"
                 android:layout_marginHorizontal="16dp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAppointedId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -242,7 +176,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvIdNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -255,7 +189,7 @@
                 android:layout_marginStart="8dp"
                 android:textSize="15sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAppointmentLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -268,7 +202,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAppointedLocationName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -281,7 +215,7 @@
                 android:layout_marginStart="8dp"
                 android:textSize="15sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAppointmentWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -290,16 +224,18 @@
                 android:layout_marginBottom="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 android:text="Appointment Week Days :"
+                android:visibility="invisible"
                 android:textStyle="bold"
                 android:textColor="#2A4767"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:textSize="12sp"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAppointmentDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="invisible"
                 app:layout_constraintTop_toBottomOf="@id/tvAppointmentLocation"
                 app:layout_constraintLeft_toRightOf="@id/tvAppointmentWeek"
                 android:text="Sun , Monday"

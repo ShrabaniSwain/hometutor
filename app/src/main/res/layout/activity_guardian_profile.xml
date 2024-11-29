@@ -20,14 +20,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/back_button"
                 app:tint="@color/white" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Profile"
@@ -50,7 +50,18 @@
             app:shapeAppearanceOverlay="@style/CircleImageView"
             app:srcCompat="@drawable/profileimage" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:srcCompat="@drawable/camera" />
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +74,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etNameSelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -77,10 +88,9 @@
             android:textSize="18sp"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="Sudip Das"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +103,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etMobileNo"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -103,14 +113,15 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="5dp"
             android:padding="8dp"
+            android:maxLength="10"
             android:gravity="start|center"
             android:textSize="18sp"
+            android:inputType="number"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="9733782373"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvEmailID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,7 +134,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etEmailIDSelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -137,10 +148,9 @@
             android:textSize="18sp"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="sudip@gmail.com"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -153,7 +163,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etGenderSelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -167,10 +177,9 @@
             android:textSize="18sp"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="Male"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,7 +192,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etCitySelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -197,10 +206,9 @@
             android:gravity="start|center"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="Bangalore"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvState"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -213,7 +221,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etStateSelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -227,23 +235,22 @@
             android:textSize="18sp"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="Karnataka"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/etStateSelect"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="State"
+            android:text="Full Address"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="10dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etAddressSelect"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -257,10 +264,9 @@
             android:textSize="18sp"
             android:textColor="#6F7882"
             android:background="@drawable/border_color_highlight"
-            android:text="Bangalore,Karnataka"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="53dp"
@@ -279,6 +285,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="25dp"
             android:background="@drawable/edit_text_background_box"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:indeterminateTint="@color/guardian_color"
+            android:visibility="gone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

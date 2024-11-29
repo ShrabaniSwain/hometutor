@@ -20,14 +20,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back_button"
             app:tint="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Profile"
@@ -62,34 +62,31 @@
         app:srcCompat="@drawable/camera" />
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:text="Sudip Das"
         android:textColor="#00448D"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1234567890"
         android:textColor="#2A4767"
         android:textSize="12sp"
         android:layout_marginTop="2dp"
         app:layout_constraintStart_toStartOf="@id/tvName"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sudip@gmail.com"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#2A4767"
         android:textSize="12sp"
@@ -97,7 +94,7 @@
         app:layout_constraintStart_toStartOf="@id/tvName"
         app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivProfileEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -108,11 +105,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/editprofile" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvGeaduate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Graduate"
         android:textColor="#2A4767"
         android:textSize="12sp"
         android:layout_marginTop="10dp"
@@ -121,11 +117,10 @@
         app:layout_constraintStart_toStartOf="@id/tvEmail"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvYearOfExp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 Y.O.E"
         android:textColor="#2A4767"
         android:textSize="12sp"
         android:layout_marginTop="10dp"
@@ -135,7 +130,7 @@
         app:layout_constraintEnd_toStartOf="@id/tvYearOfExpDate"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvYearOfExpDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -149,11 +144,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30 Years"
         android:textColor="#2A4767"
         android:textSize="12sp"
         android:layout_marginTop="10dp"
@@ -162,11 +156,10 @@
         app:layout_constraintStart_toStartOf="@id/tvGeaduate"
         app:layout_constraintTop_toBottomOf="@+id/tvGeaduate" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvMale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Male"
         android:textColor="#2A4767"
         android:textSize="12sp"
         android:layout_marginTop="10dp"
@@ -186,7 +179,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/border_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAbout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -198,11 +191,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAboutDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consetetur elitr, sed diam onumy eirmod tempor invidunt ut voluptua At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
             android:textColor="#98A1AB"
             android:textSize="14sp"
             android:layout_margin="10dp"
@@ -223,7 +215,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/border_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -235,11 +227,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAddressDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="23/1 Mohajyoti, Block 5, Beside Sargam Studio, Birati, Kolkata, 700051"
             android:textColor="#2A4767"
             android:textSize="14sp"
             android:layout_margin="10dp"
@@ -263,7 +254,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/border_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvServices"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -275,7 +266,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvServicesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -288,25 +279,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvServices" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvService1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Service 1"
-            android:textColor="#2A4767"
-            android:textSize="12sp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="7dp"
-            android:padding="6dp"
-            android:background="@drawable/border_color"
+            android:textColor="#00448D"
+            android:textStyle="bold"
+            android:textSize="14sp"
             app:layout_constraintLeft_toRightOf="@id/tvServicesTitle"
-            app:layout_constraintTop_toBottomOf="@+id/tvServices" />
+            app:layout_constraintTop_toTopOf="@+id/tvServicesTitle" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvService2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Service 2"
+            android:visibility="gone"
             android:textColor="#2A4767"
             android:textSize="12sp"
             android:layout_marginTop="7dp"
@@ -316,11 +305,12 @@
             app:layout_constraintStart_toEndOf="@id/tvService1"
             app:layout_constraintTop_toBottomOf="@+id/tvServices" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvService3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Service 3"
+            android:visibility="gone"
             android:textColor="#2A4767"
             android:textSize="12sp"
             android:layout_marginEnd="10dp"
@@ -330,7 +320,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvServices" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvUnit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -340,52 +330,12 @@
             android:textSize="14sp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvServicesTitle" />
+            app:layout_constraintTop_toBottomOf="@id/tvService1" />
 
-        <TextView
-            android:id="@+id/tvUnitsName1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Units Name"
-            android:textColor="#2A4767"
-            android:textSize="12sp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="7dp"
-            android:padding="6dp"
-            android:background="@drawable/border_color"
-            app:layout_constraintLeft_toRightOf="@id/tvUnit1"
-            app:layout_constraintTop_toBottomOf="@+id/tvService1" />
-
-        <TextView
-            android:id="@+id/tvUnitsName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Units Name"
-            android:textColor="#2A4767"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp"
-            android:padding="6dp"
-            android:background="@drawable/border_color"
-            app:layout_constraintEnd_toStartOf="@id/tvUnitsName3"
-            app:layout_constraintStart_toEndOf="@id/tvUnitsName1"
-            app:layout_constraintTop_toBottomOf="@+id/tvService2" />
-
-        <TextView
-            android:id="@+id/tvUnitsName3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Units Name"
-            android:textColor="#2A4767"
-            android:textSize="12sp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="7dp"
-            android:padding="6dp"
-            android:background="@drawable/border_color"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvService3" />
-
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvCaptureArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -395,16 +345,18 @@
             android:textSize="14sp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvUnit1" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvCaptureAreaName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mathematics"
+            android:visibility="invisible"
             android:textColor="#2A4767"
             android:textSize="12sp"
             android:layout_marginStart="10dp"
@@ -412,7 +364,7 @@
             android:padding="6dp"
             android:background="@drawable/border_color"
             app:layout_constraintLeft_toRightOf="@id/tvCaptureArea"
-            app:layout_constraintTop_toBottomOf="@id/tvUnitsName1"/>
+            app:layout_constraintTop_toBottomOf="@id/tvService1"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -427,7 +379,7 @@
         android:visibility="gone"
         android:background="@drawable/border_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvKyc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -439,7 +391,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvVoterId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -451,7 +403,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvKyc" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvVoterIdNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -463,7 +415,7 @@
             app:layout_constraintLeft_toRightOf="@id/tvVoterId"
             app:layout_constraintTop_toBottomOf="@id/tvKyc" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAadharId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -475,7 +427,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvVoterId" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAadharIdNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -487,7 +439,7 @@
             app:layout_constraintLeft_toRightOf="@id/tvAadharId"
             app:layout_constraintTop_toBottomOf="@id/tvVoterId"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPanNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -499,7 +451,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAadharId" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvPanNumberNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -511,7 +463,7 @@
             app:layout_constraintLeft_toRightOf="@id/tvPanNumber"
             app:layout_constraintTop_toBottomOf="@id/tvAadharId"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDrivingLicense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -523,7 +475,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvPanNumber" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDrivingLicenseNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -535,7 +487,7 @@
             app:layout_constraintLeft_toRightOf="@id/tvDrivingLicense"
             app:layout_constraintTop_toBottomOf="@id/tvPanNumber"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnSuccessful"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -571,7 +523,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/border_color">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBankDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -583,7 +535,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBankName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -597,7 +549,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvBankDetails" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBankholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -610,7 +562,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvBankName" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBankholderName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -622,7 +574,7 @@
             app:layout_constraintStart_toEndOf="@id/tvBankholder"
             app:layout_constraintTop_toBottomOf="@id/tvBankName" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -635,11 +587,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvBankholder" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAccountName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sudip Das"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"
@@ -647,7 +598,7 @@
             app:layout_constraintStart_toEndOf="@id/tvAccount"
             app:layout_constraintTop_toBottomOf="@id/tvBankholder" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvAccountNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -660,11 +611,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAccount" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBankAccountNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1234567891234568"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"
@@ -672,7 +622,7 @@
             app:layout_constraintStart_toEndOf="@id/tvAccountNumber"
             app:layout_constraintTop_toBottomOf="@id/tvAccount" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvIFSC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -685,11 +635,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAccountNumber" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvIFSCCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ICICI006"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"
@@ -697,7 +646,7 @@
             app:layout_constraintStart_toEndOf="@id/tvIFSC"
             app:layout_constraintTop_toBottomOf="@id/tvAccountNumber" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBranch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -712,11 +661,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvIFSC" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvBranchName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bidhannagar Branch"
             android:textStyle="bold"
             android:textColor="#2A4767"
             android:textSize="12sp"
@@ -725,6 +673,18 @@
             app:layout_constraintTop_toBottomOf="@id/tvIFSC" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:indeterminateTint="@color/guardian_color"
+            android:visibility="gone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

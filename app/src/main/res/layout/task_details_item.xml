@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         >
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/task"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:textSize="14sp"
             android:textStyle="bold"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btnUpdate"
             android:layout_width="89dp"
             android:layout_height="31dp"
@@ -46,7 +46,7 @@
             android:layout_marginEnd="10dp"
             />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvExcellent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:visibility="gone"
             android:textSize="18sp"
             android:textStyle="bold"/>
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvTaskInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             android:text="Task Is Done Properly"
             android:textSize="10sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:textSize="12sp"
             android:textStyle="bold"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:textSize="12sp"
             android:textStyle="bold"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvSchedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:layout_marginStart="10dp"
             android:textSize="12sp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/ScheduleDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,11 +142,12 @@
             android:layout_marginTop="15dp"
             android:layout_marginHorizontal="10dp">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/imagecardview"
+            android:src="@drawable/noimageavailbale"
          />
 
         </androidx.cardview.widget.CardView>
